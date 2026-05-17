@@ -1,5 +1,6 @@
 # Project One
-
+##Background
+Originally built as a team class project. I am continuing development in this fork to improve the architecture, testing, UI polish, documentation, and deployment readiness.
 ## Description
 
 This project is a web-based progressive web application (PWA) that recreates the classic card game Crazy Eights with additional gameplay modes inspired by Uno. The application allows players to play multiplayer games without requiring downloads, accounts, or centralized servers.
