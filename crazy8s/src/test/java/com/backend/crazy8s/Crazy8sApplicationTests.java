@@ -14,10 +14,19 @@ class Crazy8sApplicationTests {
     void setup() {
         gameService = new GameService();
         Room mockRoom = new Room("test-room");
-        mockRoom.addPlayer("P1");
-        mockRoom.addPlayer("P2");
-        mockRoom.addPlayer("P3");
-        mockRoom.addPlayer("P4");
+        
+        mockRoom.getPlayerIds()[0] = "p1";
+        mockRoom.getPlayerNames()[0] = "P1";
+        
+        mockRoom.getPlayerIds()[1] = "p2";
+        mockRoom.getPlayerNames()[1] = "P2";
+        
+        mockRoom.getPlayerIds()[2] = "p3";
+        mockRoom.getPlayerNames()[2] = "P3";
+        
+        mockRoom.getPlayerIds()[3] = "p4";
+        mockRoom.getPlayerNames()[3] = "P4";
+        
         state = gameService.createGame(mockRoom);
         gameService.saveGame(state);
     }
